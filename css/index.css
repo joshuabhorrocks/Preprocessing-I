@@ -1,1 +1,308 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+@font-face {
+  font-family: 'Odibee Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Odibee Sans Regular'), local('OdibeeSans-Regular'), url(https://fonts.gstatic.com/s/odibeesans/v1/neIPzCSooYAho6WvjeToRbk1cJU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+.title {
+  font-family: 'Odibee Sans', cursive;
+  text-align: center;
+  font-weight: bold;
+  padding: 2%;
+  background-color: white;
+  border-radius: 85px;
+  margin: 1%;
+}
+.p {
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+}
+.border {
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 1% 5% 1% 5%;
+}
+body {
+  background: radial-gradient(#1fcae0, #20a2e3);
+}
+h2 {
+  font-size: 25px;
+  font-family: 'Odibee Sans', cursive;
+  text-align: center;
+  font-weight: bold;
+  padding: 2%;
+  background-color: white;
+  border-radius: 85px;
+  margin: 1%;
+}
+h3 {
+  font-family: 'Odibee Sans', cursive;
+  font-size: 15px;
+  text-align: center;
+}
+.image {
+  border-radius: 5px;
+}
+header nav {
+  margin: 1%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-evenly;
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+}
+header nav a {
+  font-family: 'Odibee Sans', cursive;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+header h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: 'Odibee Sans', cursive;
+  text-align: center;
+  font-weight: bold;
+  padding: 2%;
+  background-color: white;
+  border-radius: 85px;
+  margin: 1%;
+}
+header p {
+  font-size: 20px;
+  padding: 3%;
+  margin: 2% 20% 2% 20%;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+}
+#About h2 {
+  font-size: 35px;
+}
+#About p {
+  font-size: 20px;
+  margin: 2% 20% 2% 20%;
+  padding: 2%;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+}
+#Education ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  line-height: 1;
+}
+#Education li {
+  font-size: 20px;
+  margin: 0% 20% 1% 20%;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: left;
+}
+#Education h3 {
+  font-size: 30px;
+  text-decoration: underline white;
+}
+#Experience ul {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  line-height: 1.5;
+}
+#Experience li {
+  font-size: 20px;
+  margin: 0% 20% 1% 20%;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: left;
+}
+#Experience h3 {
+  font-size: 30px;
+  text-decoration: underline white;
+}
+#Contact h4 {
+  font-family: 'Odibee Sans', cursive;
+  font-size: 25px;
+  text-align: center;
+  padding: 2%;
+}
+#Contact p {
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+}
+footer {
+  margin: 1%;
+  padding: 2%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+}
+footer p {
+  font-size: 15px;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+}

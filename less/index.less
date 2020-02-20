@@ -49,11 +49,172 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans|Ubuntu&display=swap');
+
+// Variables
+@li-FS: 20px;
+
+@accent-color: white;
+
+//Mixins
+
+.title {
+	font-family: 'Odibee Sans', cursive;
+	text-align: center;
+	font-weight: bold;
+	padding: 2%;
+	background-color: @accent-color;
+	border-radius: 85px;
+	margin: 1%;
+}
+.p {
+	font-family:'Ubuntu', sans-serif;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	line-height: 1.5;
+}
+.border {
+	border-width: 3px;
+	border-style: solid;
+	border-color: @accent-color;
+}
+
+//General
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	margin: 1% 5% 1% 5%;
 }
 
+body {
+	background: radial-gradient(#1fcae0, #20a2e3);
+}
+
+h2 {
+	font-size: 25px;;
+	.title();
+}
+
+h3 {
+	font-family: 'Odibee Sans', cursive;
+	font-size: 15px;
+	text-align: center;
+}
+
+.image {
+	border-radius: 5px;
+}
+//Header Section
+header {
+	nav {
+		margin: 1%;
+		padding: 1%;
+		display: flex;
+		justify-content: space-evenly;
+		.border();
+		//add hover
+		a {
+			font-family: 'Odibee Sans', cursive;
+			font-size: 20px;
+			color: @accent-color;
+			text-decoration: none;
+			display: flex;
+			align-items: center;
+		}
+	}
+	h1 {
+	font-size: 40px;
+	letter-spacing: 2px;
+	.title();
+	}
+	p {
+		font-size: 20px;
+		padding: 3%;
+		margin: 2% 20% 2% 20%;
+		.p();
+	}
+}
+//About Section
+#About {
+	h2 {
+		font-size: 35px;
+	}
+	p {
+		font-size: 20px;
+		margin: 2% 20% 2% 20%;
+		padding: 2%;
+		.p();
+	}
+}
+//Education Section
+#Education {
+	ul {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		line-height: 1;
+	}
+	li {
+		font-size: @li-FS;
+		margin: 0% 20% 1% 20%;
+		font-family:'Ubuntu', sans-serif;
+		display: flex;
+		justify-content: left;
+	}
+
+	h3 {
+		font-size: 30px;
+		text-decoration: underline white;
+	}
+	
+}
+//Experience Section
+#Experience {
+	ul {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		line-height: 1.5;
+	}
+	li {
+		font-size: @li-FS;
+		margin: 0% 20% 1% 20%;
+		font-family:'Ubuntu', sans-serif;
+		display: flex;
+		justify-content: left;
+	}
+	h3 {
+		font-size: 30px;
+		text-decoration: underline @accent-color;
+	}
+}
+//Contact Section
+#Contact {
+	
+	h4 {
+		font-family: 'Odibee Sans', cursive;
+		font-size: 25px;
+		text-align: center;
+		padding: 2%;
+	}
+	p {
+		font-size: 20px;
+		.p();
+	}
+}
+footer {
+	margin: 1%;
+	padding: 2%;	
+	.border();
+	p {
+		font-size: 15px;
+		color: @accent-color;
+		.p();
+	}
+}
