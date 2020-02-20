@@ -157,16 +157,20 @@ table {
   text-align: center;
   line-height: 1.5;
 }
+.border {
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
+}
 * {
   box-sizing: border-box;
-  border: 1px solid gray;
 }
 html,
 body {
   height: 100%;
   margin: 1% 5% 1% 5%;
 }
-.bg {
+body {
   background: radial-gradient(#1fcae0, #20a2e3);
 }
 h2 {
@@ -188,10 +192,13 @@ h3 {
   border-radius: 5px;
 }
 header nav {
-  border: 3px solid black;
+  margin: 1%;
   padding: 1%;
   display: flex;
   justify-content: space-evenly;
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
 }
 header nav a {
   font-family: 'Odibee Sans', cursive;
@@ -250,7 +257,7 @@ header p {
 }
 #Education h3 {
   font-size: 30px;
-  text-decoration: underline black;
+  text-decoration: underline white;
 }
 #Experience ul {
   display: flex;
@@ -267,7 +274,7 @@ header p {
 }
 #Experience h3 {
   font-size: 30px;
-  text-decoration: underline black;
+  text-decoration: underline white;
 }
 #Contact h4 {
   font-family: 'Odibee Sans', cursive;
@@ -284,10 +291,15 @@ header p {
   line-height: 1.5;
 }
 footer {
+  margin: 1%;
   padding: 2%;
+  border-width: 3px;
+  border-style: solid;
+  border-color: white;
 }
 footer p {
   font-size: 15px;
+  color: white;
   font-family: 'Ubuntu', sans-serif;
   display: flex;
   justify-content: center;
